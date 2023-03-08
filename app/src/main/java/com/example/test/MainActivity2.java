@@ -2,6 +2,8 @@ package com.example.test;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.text.TextWatcher;
 import android.text.Editable;
@@ -9,9 +11,13 @@ import android.content.Intent;
 import android.view.View;
 import android.os.Bundle;
 
+import com.google.android.material.textfield.TextInputLayout;
+
 public class MainActivity2 extends AppCompatActivity {
-    private EditText editTextHeightFeet, editTextHeightInches, editTextWeight;
+    private EditText editTextFirstName, editTextLastName, editTextAge, editTextHeightFeet, editTextHeightInches, editTextWeight;
+    private TextInputLayout weightLayout;
     private TextView textViewBMIResult;
+    private RadioGroup radioGroupGender;
 
     private String firstName;
     private String lastName;
