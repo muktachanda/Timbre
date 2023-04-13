@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:lottie="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".ConsentForm">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="166dp"
+                android:layout_height="78dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Consent Form"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec justo ligula. Maecenas sed mi eu quam lacinia convallis. Vestibulum at nulla ut mauris pretium porttitor. Sed varius turpis vel dolor tincidunt, eu consequat est imperdiet. Nam scelerisque ligula ut magna hendrerit sagittis. Vivamus dignissim tellus non est hendrerit, non sagittis felis interdum. Proin a augue eu lectus dictum suscipit. Sed euismod dui eget lorem maximus lacinia. Sed ut euismod nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam quis nulla vitae sem ultricies bibendum. Morbi maximus, dolor a aliquet iaculis, ex nisi fringilla metus, vel feugiat arcu odio vel nibh. Praesent eleifend sapien vitae mi eleifend, vel bibendum neque dapibus. Sed vel dolor justo. Morbi euismod convallis metus, eu gravida arcu consequat a. Sed in dictum eros. Etiam vel massa eu nibh bibendum pellentesque vel sit amet lorem. Aliquam erat volutpat. Nunc ornare velit at turpis elementum, eget ultrices sapien imperdiet. Curabitur auctor ullamcorper lectus, non tristique mi vestibulum nec. Fusce vel efficitur mauris. Sed aliquam ante vel purus mollis, eget euismod nulla interdum. Donec posuere euismod nunc, a consectetur massa bibendum quis. Quisque bibendum turpis nec est tincidunt consectetur. Sed imperdiet felis eget metus eleifend consequat. Integer interdum laoreet quam, non suscipit tellus luctus eget. Aliquam erat volutpat. Suspendisse potenti. Donec vel lectus vel ipsum tincidunt sollicitudin. "
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Accept"
+                android:textColor="@color/white"
+                android:onClick="acceptForm"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
